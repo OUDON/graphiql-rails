@@ -30,7 +30,8 @@ document.addEventListener("DOMContentLoaded", function (_) {
         fetcher: graphQLFetcher,
         defaultQuery: initialQuery ? initialQuery : undefined,
         headerEditorEnabled: graphiqlContainer.dataset.headerEditorEnabled === 'true',
-        inputValueDeprecation: graphiqlContainer.dataset.inputValueDeprecation === 'true',  
+        inputValueDeprecation: graphiqlContainer.dataset.inputValueDeprecation === 'true',
+        shouldPersistHeaders: true,
     };
 
     if (graphiqlContainer.dataset.queryParams === 'true') {
